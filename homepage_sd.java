@@ -70,10 +70,7 @@ public class homepage_sd extends InvokeBrowser{
 
     @Then("^I should see the results as price from low to high$")
     public void iShouldSeeTheResultsAsPriceFromLowToHigh() {
-//        List<WebElement> price = driver.findElements(By.xpath(".//*[@id='content']/div/div[1]/div/div/div[2]/div[2]/div[5]/div[1]/a[1]/div[2]/div/div/div"));
-
-
-//        java.util.List<WebElement> price = InvokeBrowser.driver.findElements(By.cssSelector(".content .col-group .block-grid-xs-2 .v2-listing-card__info .n-listing-card__price .currency-value"));
+//        java.util.List<WebElement> price = InvokeBrowser.driver.findElements(By.cssSelector(".content .col-group .block-grid-xs-2 .organic-impression .v2-listing-card__info .n-listing-card__price .currency-value"));
         java.util.List<WebElement> price = InvokeBrowser.driver.findElements(By.xpath(".//*[@id='content']//*[contains(@class,\"currency-value\")]"));
 
 
@@ -88,29 +85,8 @@ public class homepage_sd extends InvokeBrowser{
 
 
     }
-//        // extract the prices from the price elements and store in a List
-//        List<String> prices = new ArrayList<String>();
-//        for (WebElement e : price)
-//        {
-//            prices.add(e.getText());
-//        }
-//
-//// make a copy of the list
-//        List<String> sortedPrices = new ArrayList<String>(prices);
-//
-//// sort the list
-//        Collections.sort(sortedPrices);
-//
-//// true if the prices are sorted
-//        System.out.println(sortedPrices.equals(prices));
-//
-////        ArrayList<Float> priceList = new ArrayList<Float>();
-////        for (int i = 0; i<price.size(); i=i+1) {
-////            priceList.add(Float.parseFloat(price.get(i).getText()));
-////        }
-////        for (int i = 0; i<price.size(); i=i+1)
-////        {
-////            System.out.println(price.get(i).getText());
-////        }
+
     }
+
+
 
